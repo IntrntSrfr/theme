@@ -16,8 +16,8 @@ body {
     /* background: url(https://i.imgur.com/uhdTSVU.png)no-repeat fixed right; */
     /* background: url(https://i.imgur.com/lBFLlfy.png)no-repeat fixed right; */
     /* background: url(http://chito.ge/8mpTFnm.png)no-repeat fixed right; */
-    /* background: url(https://chito.ge/AgUxAhQ.png)no-repeat fixed right; */
-    background: url(https://chito.ge/2qZC9Ym.png)no-repeat fixed right;
+    background: url(https://chito.ge/AgUxAhQ.png)no-repeat fixed right; 
+    /* background: url(https://chito.ge/2qZC9Ym.png)no-repeat fixed right; */
     background-size: cover;
 }
 
@@ -611,6 +611,8 @@ body>div:last-of-type {
     height: 100%;
 }
 
+
+
 /* 
 .contentCozy-3XX413 {
     margin-left: -90px;
@@ -1035,8 +1037,12 @@ div[class^="groupStart-"] {
     border-radius: 20px;
 }
 
-.avatarHint-1qgaV3 foreignObject[mask] {
+.avatarHint-2A3RNb foreignObject[mask] {
     mask: none;
+}
+
+.avatarHint-2A3RNb{
+    border-radius: 10px;
 }
 
 .avatar-3uk_u9,
@@ -1065,9 +1071,8 @@ div[class^="groupStart-"] {
 
 /* Change Avatar Hint Radius(on profile modal) */
 
-.avatarHintInner-Dco91E {
-    border-radius: 10px;
-}
+
+
 
 .avatarWrapper-3B0ndJ.wrapper-3t9DeA,
 .avatar-28BJzY.wrapper-3t9DeA {
@@ -1105,6 +1110,7 @@ div[class^="groupStart-"] {
     mask: none;
 }
 
+
 /* Actives the hover on the member + Avatar Radius Change */
 
 /* 
@@ -1134,7 +1140,7 @@ div[class^="groupStart-"] {
     height: inherit
 }
 
-.userInfoSection-2acyCx {
+.userInfoSection-q_35fn {
     animation: userinfo_slide 1s cubic-bezier(.5, 0, 0, 1)
 }
 
@@ -1179,7 +1185,7 @@ div[class^="groupStart-"] {
     }
 }
 
-.listRow-hutiT_ {
+.listRow-hutiT_, .listRow-1iDGel {
     animation: listrow_slide 400ms cubic-bezier(.5, 0, 0, 1) 50ms backwards;
     width: 46%;
     float: left;
@@ -1201,11 +1207,11 @@ div[class^="groupStart-"] {
     animation: role_slide 200ms cubic-bezier(.5, 0, 0, 1) 50ms backwards;
 }
 
-.rolesList-22qj2L {
+.rolesList-TyGJiZ {
     animation: role_slide 200ms cubic-bezier(.5, 0, 0, 1) 100ms backwards;
 }
 
-.note-3HfJZ5 {
+.note-1MiCN7 {
     animation: role_slide 200ms cubic-bezier(.5, 0, 0, 1) 100ms backwards;
 }
 
