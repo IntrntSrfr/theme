@@ -13,11 +13,11 @@ body {
     /* 
     font-family: "Fira Code";
     */
-    background: url(https://i.imgur.com/uhdTSVU.png)no-repeat fixed right;
+    /* background: url(https://i.imgur.com/uhdTSVU.png)no-repeat fixed right; */
     /* background: url(https://i.imgur.com/lBFLlfy.png)no-repeat fixed right; */
     /* background: url(http://chito.ge/8mpTFnm.png)no-repeat fixed right; */
-    /* background: url(https://chito.ge/AgUxAhQ.png)no-repeat fixed right;  */
-    /* background: url(https://chito.ge/2qZC9Ym.png)no-repeat fixed right; */
+    /* background: url(https://chito.ge/AgUxAhQ.png)no-repeat fixed right; */ 
+    background: url(https://chito.ge/2qZC9Ym.png)no-repeat fixed right;
     background-size: cover;
 }
 
@@ -74,13 +74,31 @@ body>div:last-of-type {
 .scroller-9moviB,
 .titleContainer-2CXtJo,
 .header-2mZ9Ov,
-.theme-dark .pageWrapper-1PgVDX {
+.theme-dark .pageWrapper-1PgVDX,
+.scroller-305q3I,
+.messagesPopoutWrap-1MQ1bW,
+.header-ykumBX,
+.messageGroupWrapper-o-Zw7G,
+.footer-1kmXd4,
+.searchResultsWrap-3-pOjs,
+.searchHeader-2XoQg7,
+.searchResult-9tQ1uo,
+.channelName-1JRO3C,
+.cardFolder-28dwxo,
+.preview-2nSL_2,
+.theme-dark .paymentPane-3bwJ6A,
+.theme-dark .paginator-166-09,
+.theme-dark .payment-xT17Mq,
+.scroller-zPkAnE,
+.container-_phMUq,
+.replyBar-1YLQ2F, .threadSuggestionBar-2ufK2Z,
+.embedFull-2tM8--{
     background: none;
 }
 
 /* Top Discord line */
 .typeWindows-1za-n7 {
-    background-color: var(--middle-transparent);
+    background-color: var(--outer-transparent);
     margin-top: 0;
     padding-top: 4px;
 }
@@ -89,6 +107,16 @@ body>div:last-of-type {
     display: none;
 }
 
+/* Quick switcher */
+.quickswitcher-3JagVE{
+    background: rgba( 155, 155, 155, 0.20 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+}
+
+.input-2VB9rf{
+    background-color: var(--inner-transparent);
+}
 
 /*      */
 /* Chat */
@@ -142,6 +170,95 @@ body>div:last-of-type {
     display: none !important;
 }
 
+/* Reply bar */
+.attachedBars-tZDmyV{
+    background-color: var(--inner-transparent);
+}
+
+/* Embed */
+.embedFull-2tM8--{
+    background-color: var(--inner-transparent);
+    /* 
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+     */
+}
+
+/* Readjust the position of rightside message buttons */
+.container-3npvBV {
+    top: 0px;
+}
+
+/* Remove the background from the rightside message buttons */
+.wrapper-2aW0bm {
+    box-shadow: none;
+    transition: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Remove hover effect from messages */
+.message-2qnXI6.selected-2P5D_Z,
+.mouse-mode.full-motion .message-2qnXI6:hover {
+     background-color: rgba(0, 0, 0, 0);
+ }
+
+
+/* Popouts */
+
+/* Pinned / Mentions popout */
+.messagesPopoutWrap-1MQ1bW{
+    background-color: var(--inner-transparent);
+}
+
+.header-ykumBX{
+    background-color: var(--inner-transparent);
+}
+
+/* Pinned popout */
+/* Individual pinned message */
+.messageGroupWrapper-o-Zw7G{
+    background-color: var(--inner-transparent);
+}
+/* Footer */
+.footer-1kmXd4{
+    background-color: var(--inner-transparent);
+}
+
+/* Mentions popout */
+/* Mentioned channel header */
+.channelHeader-3Gd2xq{
+    background-color: var(--middle-transparent);
+}
+/* Mentioned message */
+.messageContainer-gbhlwo{
+    background-color: var(--inner-transparent);
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Mentions close button */
+.closeButton-1152MI{
+    margin-right: 12px;
+}
+
+/* Search popout */
+
+
+/* Search result */
+
+.searchResultsWrap-3-pOjs{
+    background-color: var(--middle-transparent);
+}
+/* Search result header */
+.searchHeader-2XoQg7{
+    background-color: var(--inner-transparent);
+}
+/* Individual search results */
+.searchResult-9tQ1uo{
+    background-color: var(--inner-transparent);
+}
+
 
 /*        */
 /* SERVER */
@@ -160,14 +277,25 @@ body>div:last-of-type {
 /* Channel info popout */
 /* This is glassmorphism */
 /* I will disable this as this goes for multiple things */
-/* 
+
 .theme-dark .root-1gCeng{
-    background: rgba( 255, 255, 255, 0.20 );
+    background: rgba( 155, 155, 155, 0.20 );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
 }
-*/
 
+/* Channel settings */
+.settingCard-3w2mVL.active-1ytUzX{
+    background-color: var(--inner-transparent);
+}
+.settingCard-3w2mVL{
+    background-color: var(--inner-transparent);
+}
+
+/* Sync status header */
+.card-4s8auQ{
+    background-color: var(--inner-transparent);
+}
 
 /* Member list */
 .members-1998pB {
@@ -177,6 +305,10 @@ body>div:last-of-type {
 /* Channel list */
 .container-3w7J-x {
     background-color: var(--middle-transparent);
+/* 
+    backdrop-filter: blur( 25px );
+    -webkit-backdrop-filter: blur( 25px );
+     */
 }
 
 /* Change unread tick */
@@ -188,12 +320,61 @@ body>div:last-of-type {
     width: 2px;
 }
 
+/* Server settings */
+
+/* Roles screen */
+
+/* Default permission header */
+.container-_phMUq{
+    background-color: var(--inner-transparent);
+}
+
+.roleRow-30TwGe:before, .roleRow-30TwGe:last-child:after{
+    background:none;
+}
+.roleRow-30TwGe{
+    background-color: var(--inner-transparent);
+    margin-bottom: 1px;
+    border-radius: 0;
+}
+.roleRow-30TwGe:nth-child(3){
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.roleRow-30TwGe:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Emoji screen */
+.theme-dark .emojiRow-zIc7ZX{
+    padding:12px;
+    background-color: var(--inner-transparent);
+}
+
+/* Audit log screen */
+
+
+
+
+/* Integrations screen*/
+.theme-dark .card-o7rAq-{
+    background-color: var(--inner-transparent);
+}
+
+
+
+
 /*             */
 /* Server list */
 /*             */
 
 .wrapper-3NnKdC {
     background-color: var(--outer-transparent);
+    /* 
+    backdrop-filter: blur( 25px );
+    -webkit-backdrop-filter: blur( 25px );
+     */
 }
 
 /* Expanded folder background color */
@@ -316,6 +497,11 @@ body>div:last-of-type {
 /* Settings screen */
 /*                 */
 
+/* Several cards used for info etc */
+.cardPrimary-1Hv-to{
+    background-color: var(--inner-transparent);
+}
+
 /* Left side */
 .sidebarRegionScroller-3MXcoP {
     background-color: var(--middle-transparent);
@@ -326,12 +512,95 @@ body>div:last-of-type {
     background-color: var(--inner-transparent);
 }
 
+/* Checked button */
+.item-26Dhrx[aria-checked=true]{
+    background-color: var(--middle-transparent);
+}
+
+/* Unchecked button */
+.item-26Dhrx{
+    background-color: var(--inner-transparent);
+}
+
+/* Dropdown menu */
+.css-gvi9bl-control{
+    background-color: var(--inner-transparent);
+}
+
+/* Authorized apps screen */
+
+/* Authorized apps */
+.authedApp-mj2Hmd{
+    background-color: var(--inner-transparent);
+}
+
+
+/* Server boost screen */
+
+/* Active server boosts */
+.guildSubscriptionSlots-JPXXvN{
+    background-color: var(--inner-transparent);
+}
+
+/* Server boost suggestions */
+.cardWrapper-2Min21{
+    background-color: var(--inner-transparent);
+}
+
+
+/* Billing screen */
+
+/* Entire payment panel */
+.theme-dark .paymentPane-3bwJ6A{
+    background-color: var(--inner-transparent);
+}
+
+/* Individual payments : hover */
+.theme-dark .hoverablePayment-Yc6mK7:hover{
+    background-color: var(--inner-transparent);
+}
+
+/* Expanded payment details */
+.theme-dark .expandedInfo-3kfShd{
+    background-color: var(--inner-transparent);
+}
+
+/* Redeem nitro code card */
+.theme-dark .codeRedemptionRedirect-1wVR4b{
+    background-color: var(--inner-transparent);
+}
+
+
+/* Activity status screen */
+
+.theme-dark .notDetected-33MY4s, 
+.theme-light .notDetected-33MY4s{
+    background-color: var(--inner-transparent);    
+}
+
+.theme-dark .game-1ipmAa{
+    background-color: var(--inner-transparent);
+    padding: 10px;
+}
+
+.theme-dark .game-1ipmAa:first-of-type{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.theme-dark .game-1ipmAa:last-of-type{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Game overlay screen */
+
 /* Game overlay preview */
 .wrapper-3jrx9n {
     background: url("https://steamcdn-a.akamaihd.net/steam/apps/319510/ss_cfe4d47366356fef6c7a8da2c0782b143584bbe4.1920x1080.jpg?t=1447363301");
     background-size: cover;
 }
-
 /*                  */
 /* Server discovery */
 /*                  */
@@ -340,3 +609,4 @@ body>div:last-of-type {
 .theme-dark .pageWrapper-1PgVDX {
     background-color: var(--inner-transparent);
 }
+
