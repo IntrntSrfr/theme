@@ -199,9 +199,14 @@ body>div:last-of-type {
 /* Remove hover effect from messages */
 .message-2qnXI6.selected-2P5D_Z,
 .mouse-mode.full-motion .message-2qnXI6:hover {
-     background-color: rgba(0, 0, 0, 0);
- }
+    background-color: rgba(0, 0, 0, 0);
+}
 
+/* But keep the effect when youre mentioned */
+.message-2qnXI6.mentioned-xhSam7.selected-2P5D_Z,
+.mouse-mode .mentioned-xhSam7 {
+    background-color: var(--background-mentioned) !important;
+}
 
 /* Popouts */
 
