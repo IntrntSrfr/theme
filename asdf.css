@@ -92,7 +92,10 @@ body>div:last-of-type {
 .scroller-zPkAnE,
 .container-_phMUq,
 .replyBar-1YLQ2F, .threadSuggestionBar-2ufK2Z,
-.embedFull-2tM8--{
+.embedFull-2tM8--,
+.theme-dark .footer-2gL1pp,
+.theme-dark .message-2qRu38,
+.chat-3bRxxu, .threadSidebar-1o3BTy{
     background: none;
 }
 
@@ -110,8 +113,8 @@ body>div:last-of-type {
 /* Quick switcher */
 .quickswitcher-3JagVE{
     background: rgba( 155, 155, 155, 0.20 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
 }
 
 .input-2VB9rf{
@@ -208,11 +211,18 @@ body>div:last-of-type {
     background-color: var(--background-mentioned) !important;
 }
 
+/* Delete message popout */
+.theme-dark .message-2qRu38{
+    background-color: var(--inner-transparent);
+}
+
 /* Popouts */
 
 /* Pinned / Mentions popout */
 .messagesPopoutWrap-1MQ1bW{
     background-color: var(--inner-transparent);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
 }
 
 .header-ykumBX{
@@ -285,8 +295,8 @@ body>div:last-of-type {
 
 .theme-dark .root-1gCeng{
     background: rgba( 155, 155, 155, 0.20 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
 }
 
 /* Channel settings */
@@ -299,7 +309,6 @@ body>div:last-of-type {
 
 /* Sync status header */
 .card-4s8auQ{
-    background-color: var(--inner-transparent);
 }
 
 /* Member list */
@@ -314,6 +323,23 @@ body>div:last-of-type {
     backdrop-filter: blur( 25px );
     -webkit-backdrop-filter: blur( 25px );
      */
+}
+
+/* Threads */
+.threadSidebar-1o3BTy{
+    margin-left: 0;
+    border-radius: 0;
+    border-left: 2px solid var(--outer-transparent);
+}
+.chat-3bRxxu.threadSidebarOpen-vdkwIh{
+    border-radius: 0;
+}
+
+.form-2fGMdU {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--inner-transparent);
 }
 
 /* Change unread tick */
