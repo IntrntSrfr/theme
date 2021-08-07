@@ -1,11 +1,9 @@
 //META{"name":"gamer","description":"gamer","author":"gamer","version":"1.0"}*//{}
 :root {
-    --pfp-size: 45px;
     --inner-transparent: rgba(0, 0, 0, 0.3);
     --middle-transparent: rgba(0, 0, 0, 0.5);
     --outer-transparent: rgba(0, 0, 0, 0.6);
-    --message-spacing: 1.0625rem;
-    --header-height: 1.375rem;
+    --clr-dark-700:rgb(56, 56, 56);
     --font-display: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif
 }
 
@@ -342,6 +340,25 @@ body>div:last-of-type {
     background-color: var(--inner-transparent);
 }
 
+/* Threads popout */
+.header-1VS4tm{
+    background-color: var(--inner-transparent);
+}
+.container-7uh5fX{
+    background-color: var(--inner-transparent);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+}
+
+.container-2I9Hud{
+    background-color: var(--inner-transparent);
+    border-color: var(--inner-transparent);
+}
+.container-2I9Hud:hover{
+    border-color: var(--clr-dark-700);
+}
+
+
 /* Change unread tick */
 .unread-2lAfLh {
     margin-top: 0;
@@ -466,12 +483,12 @@ body>div:last-of-type {
 
 .body-3HBlXn,
 .infoScroller-1Qu30O {
-    animation: userinfo_slide 500ms cubic-bezier(.5, 0, 0, 1)
+    animation: userinfo_slide 600ms cubic-bezier(.5, 0, 0, 1)
 }
 
 @keyframes userinfo_slide {
     from {
-        transform: translate(-50px, 0);
+        transform: translate(-10px, 0);
         opacity: 0;
     }
 }
@@ -499,7 +516,7 @@ body>div:last-of-type {
 
 @keyframes tabItem_Slide {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
         opacity: 0;
     }
 }
@@ -507,18 +524,22 @@ body>div:last-of-type {
 /* Mutual servers | Mutual friends - two rows, smaller server buttons */
 .listRow-hutiT_,
 .listRow-1iDGel {
-    animation: listrow_slide 400ms cubic-bezier(.5, 0, 0, 1) 50ms backwards;
-    width: 46%;
-    float: left;
+    flex: 1 1 45%;
     background-color: var(--inner-transparent);
-    padding: 5px 0 5px 10px;
-    margin: 5px 0 5px 10px;
+    padding: 5px;
+    margin: 2px 0 2px 4px;
+}
+
+.listScroller-3GmIYj{
+    display: flex;
+    flex-flow: row wrap;
+    animation: listrow_slide 600ms cubic-bezier(.5, 0, 0, 1) 50ms backwards;
 }
 
 /* Slide-in animation */
 @keyframes listrow_slide {
     from {
-        transform: translate(0, -50px);
+        transform: translate(0, -10px);
         opacity: 0;
     }
 }
